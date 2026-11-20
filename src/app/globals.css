@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0b0b;
+  --foreground: #f2f2f2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: #0b0b0b;
+  --color-panel: #141414;
+  --color-panel-2: #1c1c1c;
+  --color-muted: #a3a3a3;
+  --font-sans: var(--font-jost);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Page-load intro: hero starts dimmed with only the menu icon, then the
+   logo + social icons fade in and the image brightens. */
+@keyframes intro-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes hero-brighten {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.intro-fade {
+  animation: intro-in 1s ease 0.9s both;
+}
+.hero-dim {
+  animation: hero-brighten 1.4s ease 0.5s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro-fade, .hero-dim { animation: none; }
+  .hero-dim { opacity: 0; }
 }
