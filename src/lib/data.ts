@@ -6,11 +6,9 @@ export const site = {
   phones: ["+91 9643258584", "+91 9650959147"],
   address: ["236/16, Jor Bagh Road, Lodhi Colony,", "New Delhi- 110003."],
   socials: {
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
-    youtube: "#",
-    pinterest: "#",
+    facebook: "https://www.facebook.com/nkarchitectsglobal?mibextid=wwXIfr&rdid=hNm5PMz5EfHniOkG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19uejNUFwY%2F%3Fmibextid%3DwwXIfr%26ref%3D1#",
+    instagram: "https://www.instagram.com/n.k.architects?bqrl=MWg0YzR5MzA1N20xdg%3D%3D",
+    youtube: "https://www.youtube.com/@nkarchitects7560",
   },
 };
 
@@ -96,6 +94,7 @@ export const projects: Project[] = [
       heading: { textX: 164, underline: 355 },
       heroFade: "short",
       hero: "/images/projects/ats-villa/hero.jpg",
+      video: "/videos/ats-villa.mp4",
       heroAlt: "Bedroom with a round canopy bed, crystal chandelier and sheer drapes",
       heroOpacity: 0.6,
       galleryRowGap: 35,
@@ -153,6 +152,7 @@ export const projects: Project[] = [
       heading: { textX: 162, underline: 445 },
       heroFade: "tall",
       hero: "/images/projects/karol-bagh/hero.jpg",
+      video: "https://www.youtube.com/embed/Vw-7oZPUVWY",
       heroAlt: "Double-height entrance foyer with a bonsai tree and floating staircase",
       summary:
         "Innovative response to a tricky brief: design a private home with an attractive double height entrance foyer around a natural tree, in a densely urban area of delhi on a 550 sq.yards site.",

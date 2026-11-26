@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import SocialIcons from "@/components/SocialIcons";
+import PortfolioVideo from "@/components/PortfolioVideo";
 import { projects } from "@/lib/data";
 
 /*
@@ -163,13 +164,7 @@ export default async function ProjectPage({
               className={`${tile} ${d.video ? "" : "flex items-center justify-center bg-transparent"}`}
             >
               {d.video ? (
-                <video
-                  src={d.video}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
+                <PortfolioVideo src={d.video} />
               ) : (
                 <p className="text-center text-[56px] font-normal uppercase leading-[1.25] text-white md:text-[clamp(56px,5.56vw,80px)]">
                   Add video

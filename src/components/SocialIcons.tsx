@@ -1,12 +1,10 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPinterestP } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { site } from "@/lib/data";
 
 const items = [
   { href: site.socials.facebook, label: "Facebook", Icon: FaFacebookF },
   { href: site.socials.instagram, label: "Instagram", Icon: FaInstagram },
-  { href: site.socials.linkedin, label: "LinkedIn", Icon: FaLinkedinIn },
   { href: site.socials.youtube, label: "YouTube", Icon: FaYoutube },
-  { href: site.socials.pinterest, label: "Pinterest", Icon: FaPinterestP },
 ];
 
 export default function SocialIcons({

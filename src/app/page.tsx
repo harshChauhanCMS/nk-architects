@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HomeHeroSlideshow from "@/components/HomeHeroSlideshow";
 import SocialIcons from "@/components/SocialIcons";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import TestimonialSlider from "@/components/TestimonialSlider";
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       {/* HERO — 1440×682 in the design */}
       <section className="relative h-[60vh] min-h-[420px] md:h-auto md:min-h-0 md:aspect-[1440/682]">
-        <Image src={images.hero} alt="Living room interior by N.K. Architects" fill priority sizes="100vw" className="object-cover" />
+        <HomeHeroSlideshow />
         {/* dark veil that lifts on page load (intro state = design frame 1) */}
         <div className="hero-dim absolute inset-0 bg-black/45" />
         <SocialIcons direction="col" className="intro-fade absolute left-6 top-[30%] md:left-[7.7vw] md:top-[37%]" />
