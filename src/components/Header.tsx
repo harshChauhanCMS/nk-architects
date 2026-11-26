@@ -18,7 +18,7 @@ const menuLinks: { label: string; href?: string }[] = [
   { label: "Our Journey", href: "/journey" },
   { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Blogs" }, // no blog page yet
+  { label: "Blogs", href: "/blogs" },
   { label: "Testimonials", href: "/#testimonials" },
 ];
 

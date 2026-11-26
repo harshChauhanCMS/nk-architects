@@ -20,6 +20,7 @@ export const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Blogs", href: "/blogs" },
   { label: "Testimonials", href: "/#testimonials" },
   { label: "Contact", href: "/contact" },
 ];
