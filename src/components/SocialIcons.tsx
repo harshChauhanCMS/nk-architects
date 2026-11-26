@@ -23,9 +23,9 @@ export default function SocialIcons({
             aria-label={label}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black transition hover:scale-110 hover:bg-neutral-300"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black transition hover:scale-110 hover:bg-neutral-300"
           >
-            <Icon className="h-3 w-3" />
+            <Icon className="h-5 w-5" />
           </a>
         </li>
       ))}

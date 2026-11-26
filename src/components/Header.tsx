@@ -60,11 +60,11 @@ export default function Header() {
           aria-label="Open menu"
           aria-expanded={open}
           aria-controls="site-menu"
-          className="flex h-10 w-10 flex-col items-end justify-center gap-[7px]"
+          className="flex h-16 w-16 flex-col items-end justify-center gap-[10px]"
         >
-          <span className="h-[2.5px] w-[22px] rounded-full bg-white" />
-          <span className="h-[2.5px] w-[30px] rounded-full bg-white" />
-          <span className="h-[2.5px] w-[22px] rounded-full bg-white" />
+          <span className="h-[4px] w-[38px] rounded-full bg-white" />
+          <span className="h-[4px] w-[52px] rounded-full bg-white" />
+          <span className="h-[4px] w-[38px] rounded-full bg-white" />
         </button>
       </header>
 

@@ -56,10 +56,10 @@ export default function Footer() {
 
         {/* legal */}
         <div className="text-[17px] leading-[28px] md:pt-[3px]">
-          <Link href="#" className="block underline underline-offset-2 hover:text-white">
+          <Link href="/privacy-policy" className="block underline underline-offset-2 hover:text-white">
             Privacy Policy
           </Link>
-          <Link href="#" className="mt-[10px] block underline underline-offset-2 hover:text-white">
+          <Link href="/terms-and-conditions" className="mt-[10px] block underline underline-offset-2 hover:text-white">
             Terms &amp; Conditions
           </Link>
           <p className="mt-[26px] whitespace-nowrap">
